@@ -4,7 +4,7 @@
 // the Arduino must be an HID type; Micro, Leonardo, or Due. The computer doesn't recognize the Uno as a keyboard.
 
 
-// the resistance thresholds when using 22k ohm resistors
+// the resistance thresholds when using 22M ohm resistors
 const int PressedMaxThreshold = 200; // this is the maximum reading when the button is pressed. Anything underneath this value will register as a touch (a higher number will allow inputs with a higher natural resistance at the risk of false positives)
 const int ReleasedMinThreshold = 300; // this is the minimum reading when there is no connection. Any reading higher than this will register as no longer touching
 const byte PinCount = 4;
