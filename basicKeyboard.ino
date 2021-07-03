@@ -47,9 +47,9 @@ void loop(){
 
 
         if(currentAverage < PressedMaxThreshold){
-            currentState = true;            // this means that the circuit has been completed, so the key is currently being pressed
+            currentState = true;            // this means that the circuit has been completed, so the key should be pressed
         }else if(currentAverage > ReleasedMinThreshold){
-            currentState = false;            // the circuit has been broken, release
+            currentState = false;            // the circuit has been broken, so the key should be released
         }
 
         // if the state of the pin is different from the previous iteration
