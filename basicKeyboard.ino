@@ -7,7 +7,7 @@
 // the resistance thresholds when using 22M ohm resistors
 const int PressedMaxThreshold = 200; // this is the maximum reading when the button is pressed. Anything underneath this value will register as a touch (a higher number will allow inputs with a higher natural resistance at the risk of false positives)
 const int ReleasedMinThreshold = 300; // this is the minimum reading when there is no connection. Any reading higher than this will register as no longer touching
-const byte PinCount = 4;
+const byte PinCount = 2;
 
 // you can have as many keys as you have analog pins
 const byte InputPins[PinCount] = {A0, A1};
